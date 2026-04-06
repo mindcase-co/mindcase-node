@@ -1,7 +1,7 @@
 {
   "name": "mindcase",
   "version": "0.3.0",
-  "description": "Mindcase SDK — programmatic access to 34+ data collection agents",
+  "description": "Node.js SDK for the Mindcase API — collect structured data from 30+ web sources including LinkedIn, Instagram, Amazon, Google Maps, and more.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -16,6 +16,36 @@
     "typescript": "^5.4.0"
   },
   "license": "MIT",
+  "author": "Mindcase <team@mindcase.co> (https://mindcase.co)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mindcase-team/mindcase-node.git"
+  },
+  "homepage": "https://docs.mindcase.co/sdk/node",
+  "bugs": {
+    "url": "https://github.com/mindcase-team/mindcase-node/issues"
+  },
+  "keywords": [
+    "mindcase",
+    "web-scraping",
+    "data-collection",
+    "api",
+    "sdk",
+    "linkedin-scraper",
+    "instagram-scraper",
+    "amazon-scraper",
+    "google-maps-scraper",
+    "youtube-scraper",
+    "twitter-scraper",
+    "tiktok-scraper",
+    "reddit-scraper",
+    "data-extraction",
+    "lead-generation",
+    "market-research",
+    "price-monitoring",
+    "social-media-api",
+    "e-commerce-data"
+  ],
   "engines": {
     "node": ">=18.0.0"
   }
