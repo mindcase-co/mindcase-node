@@ -192,13 +192,19 @@ const client = new Mindcase({
 
 Sign up at [app.mindcase.co](https://app.mindcase.co) and create an API key in the API Console.
 
+## Also Available
+
+- **[MCP Server](https://pypi.org/project/mindcase-mcp/)** — `uvx mindcase-mcp` to use Mindcase agents directly from Claude, no code needed
+- **[Python SDK](https://pypi.org/project/mindcase/)** — `pip install mindcase` for Python
+
 ## Documentation
 
 - [API Documentation](https://docs.mindcase.co)
 - [Agent Reference](https://docs.mindcase.co/agents-overview)
 - [Authentication](https://docs.mindcase.co/authentication)
 - [Node.js SDK Guide](https://docs.mindcase.co/sdk/node)
-- [Python SDK](https://github.com/mindcase-team/mindcase-python)
+- [MCP Server Guide](https://docs.mindcase.co/sdk/mcp)
+- [Python SDK Guide](https://docs.mindcase.co/sdk/python)
 
 ## License
 
