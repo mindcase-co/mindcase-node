@@ -192,10 +192,37 @@ const client = new Mindcase({
 
 Sign up at [app.mindcase.co](https://app.mindcase.co) and create an API key in the API Console.
 
+## MCP Server (Claude Integration)
+
+This package includes a built-in MCP server that exposes all 30+ agents as Claude tools.
+
+**Add to Claude Code:**
+
+```bash
+claude mcp add mindcase -- npx mindcase mcp
+```
+
+**Add to Claude Desktop** (`claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "mindcase": {
+      "command": "npx",
+      "args": ["mindcase", "mcp"],
+      "env": {
+        "MINDCASE_API_KEY": "mk_live_..."
+      }
+    }
+  }
+}
+```
+
+Then ask Claude: *"Find the top 10 AI startups on LinkedIn"* or *"Get reviews for this Amazon product"*.
+
 ## Also Available
 
-- **[MCP Server](https://pypi.org/project/mindcase-mcp/)** — `uvx mindcase-mcp` to use Mindcase agents directly from Claude, no code needed
-- **[Python SDK](https://pypi.org/project/mindcase/)** — `pip install mindcase` for Python
+- **[Python SDK](https://pypi.org/project/mindcase/)** — `pip install mindcase` for Python (also includes MCP server via `mindcase mcp`)
 
 ## Documentation
 

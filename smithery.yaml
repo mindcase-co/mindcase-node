@@ -1,0 +1,18 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      MINDCASE_API_KEY:
+        type: string
+        description: "Your Mindcase API key from app.mindcase.co"
+    required:
+      - MINDCASE_API_KEY
+  commandFunction: |-
+    (config) => ({
+      command: "npx",
+      args: ["mindcase", "mcp"],
+      env: {
+        MINDCASE_API_KEY: config.MINDCASE_API_KEY
+      }
+    })

@@ -1,5 +1,5 @@
-import type { Mindcase } from "./client";
-import { Agent, AgentSummary, Job, JobResults } from "./types";
+import type { Mindcase } from "./client.js";
+import { Agent, AgentSummary, Job, JobResults } from "./types.js";
 
 /** Parse 'group/slug' into [group, slug]. */
 export function parseAgentPath(agent: string): [string, string] {

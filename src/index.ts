@@ -1,4 +1,4 @@
-export { Mindcase } from "./client";
+export { Mindcase } from "./client.js";
 
 export {
   MindcaseError,
@@ -7,7 +7,7 @@ export {
   NotFoundError,
   ValidationError,
   RateLimitError,
-} from "./errors";
+} from "./errors.js";
 
 export {
   Parameter,
@@ -15,4 +15,4 @@ export {
   Agent,
   Job,
   JobResults,
-} from "./types";
+} from "./types.js";

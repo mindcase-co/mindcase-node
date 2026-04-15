@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.mindcase-co/mindcase-node",
+  "title": "Mindcase (Node.js)",
+  "description": "Access 30+ data collection agents from Claude with natural language. Collect structured data from LinkedIn, Instagram, Google Maps, Amazon, YouTube, and more.",
+  "repository": {
+    "url": "https://github.com/mindcase-team/mindcase-node",
+    "source": "github"
+  },
+  "version": "0.4.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mindcase",
+      "version": "0.4.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "arguments": ["mcp"],
+      "environmentVariables": [
+        {
+          "name": "MINDCASE_API_KEY",
+          "description": "Your Mindcase API key from app.mindcase.co",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

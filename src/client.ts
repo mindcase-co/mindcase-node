@@ -5,9 +5,9 @@ import {
   NotFoundError,
   ValidationError,
   RateLimitError,
-} from "./errors";
-import { AgentsNamespace, JobsNamespace, parseAgentPath } from "./namespaces";
-import { Job, JobResults } from "./types";
+} from "./errors.js";
+import { AgentsNamespace, JobsNamespace, parseAgentPath } from "./namespaces.js";
+import { Job, JobResults } from "./types.js";
 
 const DEFAULT_BASE_URL = "https://api.mindcase.co/api/v1";
 const DEFAULT_TIMEOUT = 30_000; // ms
@@ -293,7 +293,7 @@ export class Mindcase {
     return {
       Authorization: `Bearer ${this._apiKey}`,
       "Content-Type": "application/json",
-      "User-Agent": "mindcase-node/0.3.0",
+      "User-Agent": "mindcase-node/0.4.0",
     };
   }
 
